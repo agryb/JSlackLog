@@ -23,4 +23,4 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
                     configuration.LogLevel = LogLevel.Warning;
                     configuration.WebhookUrl = "<slack-webhook-url>";
                 }));
-'''
+```
