@@ -3,9 +3,11 @@ Log messages to Slack channel
 
 ## Usage and registration of the logger
 
-To add JSlack logging provider
+To add JSlack logging provider:
 
-1. Add JSlackLogConfig section to appsettings.json:
+1. Add JSlackLog nuget package: https://www.nuget.org/packages/JSlackLog/
+
+2. Add JSlackLogConfig section to appsettings.json:
 
 ```json
 
@@ -15,7 +17,7 @@ To add JSlack logging provider
 
 ```
 
-2. Add JSlackLogger to HostBuilder and configure with the section JSlackConfig
+3. Add JSlackLogger to HostBuilder and configure with the section JSlackConfig
 
 ```C#
 static IHostBuilder CreateHostBuilder(string[] args) =>
