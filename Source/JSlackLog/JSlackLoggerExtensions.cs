@@ -5,8 +5,6 @@ namespace JSlackLog
 {
     public static class JSlackLoggerExtensions
     {
-        public static ILoggingBuilder AddJSlackLogger(this ILoggingBuilder builder) 
-            => builder.AddJSlackLogger(new JSlackLoggerConfiguration());
 
         public static ILoggingBuilder AddJSlackLogger(
             this ILoggingBuilder builder,

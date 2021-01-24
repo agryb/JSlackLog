@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging;
 
 namespace JSlackLog
@@ -11,6 +8,8 @@ namespace JSlackLog
         private readonly JSlackLoggerConfiguration _config;
         private readonly ConcurrentDictionary<string, JSlackLogger> _loggers 
             = new ConcurrentDictionary<string, JSlackLogger>();
+
+
 
         public JSlackLoggerProvider(JSlackLoggerConfiguration config) 
             => _config = config;

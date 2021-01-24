@@ -45,7 +45,8 @@ namespace JSlackLog
                     var r = await httpClient.PostAsync(_config.WebhookUrl, stringContent);
                     await r.Content.ReadAsStringAsync();
                 });
-            task.Wait();
+            if (!_config.FireAndForget)
+                task.Wait();
         }
     }
 }

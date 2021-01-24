@@ -17,7 +17,6 @@ static IHostBuilder CreateHostBuilder(string[] args) =>
                             LogLevel = LogLevel.Error,
                             WebhookUrl = "<slack-webhook-url>"
                         }))
-                .AddJSlackLogger()
                 .AddJSlackLogger(configuration =>
                 {
                     configuration.LogLevel = LogLevel.Warning;
